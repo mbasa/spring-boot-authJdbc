@@ -19,6 +19,8 @@ To run the application: </br>
 
 * mvn spring-boot:run 
 
+Note: all passwords should [Bcrypt Encrypted](https://bcrypt-generator.com/)
+
 
 Testing the application
 =========
