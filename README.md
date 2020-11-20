@@ -87,7 +87,7 @@ result will be:
 
 <b>Use Token to access REST API Services</b>
 
-GET Request
+* GET Request
 
 ```
 curl http://localhost:8080/spring-boot-authJdbc/api/employee -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTE4ODk1NzcsInVzZXJfbmFtZSI6ImpvaG4uZG9lIiwiYXV0aG9yaXRpZXMiOlsiU1RBTkRBUkRfVVNFUiJdLCJqdGkiOiJmYmM1OWM5OC0xNDVkLTRkZDEtOGIxYS1kMzQxOTZmMzk4MDgiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.d7BFFtfPJwfwsMmr_msW-_Qv0dQ1wRyqeZmFavHf3hc"
@@ -102,7 +102,7 @@ result will be:
 [{"id":1,"name":"Jack","address":"USA","email":"jack@gmail.com"}]
 ```
 
-POST Request
+* POST Request
 
 ```
 curl http://localhost:8080/spring-boot-authJdbc/api/employee -X POST -H "Content-Type: application/json" -d '{"id":2,"name":"Mario","address":"75 Nathan Street White Plains","email":"mario@gmail.com"}' -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTE4ODk1NzcsInVzZXJfbmFtZSI6ImpvaG4uZG9lIiwiYXV0aG9yaXRpZXMiOlsiU1RBTkRBUkRfVVNFUiJdLCJqdGkiOiJmYmM1OWM5OC0xNDVkLTRkZDEtOGIxYS1kMzQxOTZmMzk4MDgiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.d7BFFtfPJwfwsMmr_msW-_Qv0dQ1wRyqeZmFavHf3hc"
@@ -115,7 +115,7 @@ result will be:
 {"id":2,"name":"Mario","address":"75 Nathan Street White Plains","email":"mario@gmail.com"}
 ```
 
-DELETE Request
+* DELETE Request
 
 ```
 curl http://localhost:8080/spring-boot-auemployee -X DELETE -H "Content-Type: application/json" -d '{"id":2,"name":"Mario","address":"75 Nathan Street White Plains","email":"mario@gmail.com"}' -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MTE4ODk1NzcsInVzZXJfbmFtZSI6ImpvaG4uZG9lIiwiYXV0aG9yaXRpZXMiOlsiU1RBTkRBUkRfVVNFUiJdLCJqdGkiOiJmYmM1OWM5OC0xNDVkLTRkZDEtOGIxYS1kMzQxOTZmMzk4MDgiLCJjbGllbnRfaWQiOiJ0ZXN0and0Y2xpZW50aWQiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.d7BFFtfPJwfwsMmr_msW-_Qv0dQ1wRyqeZmFavHf3hc"
